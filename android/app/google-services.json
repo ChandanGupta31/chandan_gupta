@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "874966536972",
+    "project_id": "er-chandan-gupta",
+    "storage_bucket": "er-chandan-gupta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874966536972:android:000522f2f1b7a549816f29",
+        "android_client_info": {
+          "package_name": "com.king.chandan_gupta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874966536972-n5k29hu80jjft47c6ekso4lvbf7rpn7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlto1r-1TrJ73y6e-abt7xtf1RXYes6JM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874966536972-n5k29hu80jjft47c6ekso4lvbf7rpn7i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "874966536972-7h82dkd6d1kl6shvu1vn2rq5ojjs2s9c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.king.chandanGupta.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
