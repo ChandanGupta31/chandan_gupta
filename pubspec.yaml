@@ -36,13 +36,17 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   firebase_core: ^2.14.0
-  http: ^1.1.0
+  http: ^0.13.4
   google_nav_bar: ^5.0.6
   carousel_slider: ^4.2.1
   firebase_storage: ^11.2.4
   cloud_firestore: ^4.8.2
   flutter_easyloading: ^3.0.5
   url_launcher: ^6.1.12
+  curved_navigation_bar: ^1.0.3
+  responsive_builder: ^0.7.0
+  google_sign_in: ^6.1.5
+  timeline_tile: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -88,9 +92,9 @@ flutter:
         - asset: assets/fonts/poppins-regular.ttf
     #       - asset: fonts/Schyler-Italic.ttf
     #         style: italic
-    - family: JMH
+    - family: BlackOps
       fonts:
-        - asset: assets/fonts/jmh_typewriter.ttf
+        - asset: assets/fonts/black-ops-one-regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

@@ -1,48 +1,47 @@
-import 'package:chandan_gupta/screens/certificate.dart';
-import 'package:chandan_gupta/screens/contact.dart';
-import 'package:chandan_gupta/screens/container.dart';
-import 'package:chandan_gupta/screens/home.dart';
-import 'package:chandan_gupta/screens/project.dart';
-import 'package:chandan_gupta/services/easy_loading.dart';
-import 'package:chandan_gupta/services/firebase.dart';
-import 'package:chandan_gupta/services/firebase_data.dart';
-import 'package:chandan_gupta/widgets/contact_column.dart';
-import 'package:chandan_gupta/widgets/contact_row.dart';
-import 'package:chandan_gupta/widgets/home_column.dart';
-import 'package:chandan_gupta/widgets/home_row.dart';
+import 'package:chandan_gupta/app/home/home.dart';
+import 'package:chandan_gupta/services/firebasse/firebase_options.dart';
+import 'package:chandan_gupta/utils/colors.dart';
+import 'package:chandan_gupta/utils/easy_loading.dart';
+import 'package:chandan_gupta/utils/firebase_data.dart';
+import 'package:chandan_gupta/utils/routes.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 Future<void> main() async {
 
+  // Widget Initialization
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initializing Firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  // Calling functions to fetch data
+  await FirebaseData.getDataFromFirebase();
+
+  // Initializing EasyLoading
   EasyLoadingService.initialize();
-  await FirebaseServices.initialize();
-  await FirebaseData.getData();
 
+  // App Configuration
   runApp(MaterialApp(
-
     debugShowCheckedModeBanner: false,
-    initialRoute: 'container',
-
-    routes: {
-      'container' : (context) => ContainerScreen(),
-      'home' : (context) => HomeScreen(),
-      'project' : (context) => ProjectScreen(),
-      'certificate' : (context) => CertificateScreen(),
-      'contact' : (context) => ContactScreen(),
-      'home_row' : (context) => HomeRow(),
-      'home_column' : (context) => HomeColumn(),
-      'contact_row' : (context) => ContactRow(),
-      'contact_column' : (context) => ContactColumn(),
-    },
-
+    initialRoute: '/',
+    routes: route,
+    themeMode: ThemeMode.light,
     theme: ThemeData(
+      useMaterial3: true,
+      primaryColor: const Color(0xFF1CBDD2),                // Main Colour
+      secondaryHeaderColor: const Color(0xFFC6EEF4),        // For background Purpose
       fontFamily: 'Poppins',
-      primaryColor: Color(0xFFF0A04B),
     ),
 
+    // theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
+    // darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
+
+
     builder: EasyLoading.init(),
-  ));
+  ),);
 
 }
-
