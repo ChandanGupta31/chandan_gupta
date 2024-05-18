@@ -304,13 +304,13 @@ class HomeApp extends StatelessWidget {
                   // UIET, CSJM University
                   TimelineTile(
                     afterLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     beforeLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     alignment: TimelineAlign.start,
                     indicatorStyle: IndicatorStyle(
                       iconStyle: IconStyle(
-                          iconData: Icons.school_rounded,
+                          iconData: Icons.school,
                           color: Colors.yellowAccent),
                       color: Theme.of(context).primaryColor,
                       width: 50,
@@ -325,7 +325,10 @@ class HomeApp extends StatelessWidget {
                         children: [
                           Text(
                             'UIET, CSJM University, Kanpur',
-                            style: Style.subHeaderTextStyle,
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                            ),
                           ),
                           Text(
                             'B.Tech (ECE) : 2021-25',
@@ -370,7 +373,10 @@ class HomeApp extends StatelessWidget {
                         children: [
                           Text(
                             'BarberHood',
-                            style: Style.subHeaderTextStyle,
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                            ),
                           ),
                           Text(
                             'Designed & Developed : 2023',
@@ -387,9 +393,9 @@ class HomeApp extends StatelessWidget {
                   // Dream Dev Infotech
                   TimelineTile(
                     afterLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     beforeLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     alignment: TimelineAlign.start,
                     indicatorStyle: IndicatorStyle(
                       iconStyle: IconStyle(
@@ -408,7 +414,10 @@ class HomeApp extends StatelessWidget {
                         children: [
                           Text(
                             'Dream Dev InfoTech',
-                            style: Style.subHeaderTextStyle,
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                            ),
                           ),
                           Text(
                             'Flutter Developer Intern : 2023',
@@ -425,9 +434,9 @@ class HomeApp extends StatelessWidget {
                   // MPGI Hackathon
                   TimelineTile(
                     afterLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     beforeLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     alignment: TimelineAlign.start,
                     indicatorStyle: IndicatorStyle(
                       iconStyle: IconStyle(
@@ -446,7 +455,10 @@ class HomeApp extends StatelessWidget {
                         children: [
                           Text(
                             'MPGI, Kanpur',
-                            style: Style.subHeaderTextStyle,
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                            ),
                           ),
                           Text(
                             'Hackathon : 2023',
@@ -470,13 +482,13 @@ class HomeApp extends StatelessWidget {
                   // Python Programming - IIT Kanpur
                   TimelineTile(
                     afterLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     beforeLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     alignment: TimelineAlign.start,
                     indicatorStyle: IndicatorStyle(
                       iconStyle: IconStyle(
-                          iconData: Icons.verified_rounded,
+                          iconData: Icons.verified,
                           color: Colors.yellowAccent),
                       color: Theme.of(context).primaryColor,
                       width: 50,
@@ -491,7 +503,10 @@ class HomeApp extends StatelessWidget {
                         children: [
                           Text(
                             'IIT Kanpur',
-                            style: Style.subHeaderTextStyle,
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                            ),
                           ),
                           Text(
                             'Python Programming : 2021',
@@ -515,13 +530,13 @@ class HomeApp extends StatelessWidget {
                   // Kendriya Vidyalaya, AFS Memaura
                   TimelineTile(
                     afterLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     beforeLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     alignment: TimelineAlign.start,
                     indicatorStyle: IndicatorStyle(
                       iconStyle: IconStyle(
-                          iconData: Icons.school_rounded,
+                          iconData: Icons.school,
                           color: Colors.yellowAccent),
                       color: Theme.of(context).primaryColor,
                       width: 50,
@@ -536,7 +551,10 @@ class HomeApp extends StatelessWidget {
                         children: [
                           Text(
                             'Kendriya Vidyalaya, Lucknow',
-                            style: Style.subHeaderTextStyle,
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                            ),
                           ),
                           Text(
                             'Intermediate : 2021',
@@ -561,13 +579,13 @@ class HomeApp extends StatelessWidget {
                   TimelineTile(
                     isLast: true,
                     afterLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     beforeLineStyle:
-                        LineStyle(color: Theme.of(context).primaryColor),
+                    LineStyle(color: Theme.of(context).primaryColor),
                     alignment: TimelineAlign.start,
                     indicatorStyle: IndicatorStyle(
                       iconStyle: IconStyle(
-                          iconData: Icons.school_rounded,
+                          iconData: Icons.school,
                           color: Colors.yellowAccent),
                       color: Theme.of(context).primaryColor,
                       width: 50,
@@ -582,7 +600,10 @@ class HomeApp extends StatelessWidget {
                         children: [
                           Text(
                             'Bhonwal Convent School, Lucknow',
-                            style: Style.subHeaderTextStyle,
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                            ),
                           ),
                           Text(
                             'High School : 2019',

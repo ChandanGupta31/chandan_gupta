@@ -31,8 +31,16 @@ class _MyWebState extends State<MyWeb> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).primaryColor,
-          title: Text(
-            'Chandan Gupta',
+          title: InkWell(
+            onTap: (){
+              widget.page = 0;
+              setState(() {
+
+              });
+            },
+            child: Text(
+              'Chandan Gupta',
+            ),
           ),
           titleTextStyle: TextStyle(
             fontSize: 28,

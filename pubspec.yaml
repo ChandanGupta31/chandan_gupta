@@ -47,6 +47,7 @@ dependencies:
   responsive_builder: ^0.7.0
   google_sign_in: ^6.1.5
   timeline_tile: ^2.0.0
+  email_validator: ^2.1.17
 
 dev_dependencies:
   flutter_test:
