@@ -18,6 +18,7 @@ class CertificateWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffceeeee),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: GridView.builder(
