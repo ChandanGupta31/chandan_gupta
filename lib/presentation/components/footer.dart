@@ -95,17 +95,17 @@ class Footer extends StatelessWidget {
       children: [
         _FooterIcon(
           icon: FontAwesomeIcons.github, 
-          onTap: () => _launchURL("https://github.com/yourusername")
+          onTap: () => _launchURL("https://github.com/ChandanGupta31")
         ),
         const SizedBox(width: 15),
         _FooterIcon(
           icon: FontAwesomeIcons.linkedin, 
-          onTap: () => _launchURL("https://linkedin.com/in/yourusername")
+          onTap: () => _launchURL("https://linkedin.com/in/erchandangupta")
         ),
         const SizedBox(width: 15),
         _FooterIcon(
           icon: FontAwesomeIcons.twitter, 
-          onTap: () => _launchURL("https://twitter.com/yourusername")
+          onTap: () => _launchURL("https://twitter.com/Chandan06564490")
         ),
       ],
     );
